@@ -1,6 +1,6 @@
 # Stock Dashboard — Cowork package
 
-`Stock Dashboard.html` is a self-contained dashboard (works offline, just double-click to open in a browser).
+`index.html` is a self-contained dashboard (works offline, just double-click to open in a browser). It's also published live via GitHub Pages.
 
 ## Where the data lives
 All portfolio data is **sample data**, hardcoded inside the HTML file in the `data()` function of the component logic. Each holding looks like:
@@ -26,11 +26,11 @@ NVDA: [ { date: '02.07.', source: '...', title: '...' } ]
 ```
 
 ## Example Cowork prompts
-- "Open Stock Dashboard.html, fetch today's prices for the tickers in the data() function, and update `price`, `value` and `day` accordingly."
-- "Here is my broker CSV export in Downloads — update the holdings in Stock Dashboard.html to match it (shares, cost, value)."
+- "Open index.html, fetch today's prices for the tickers in the data() function, and update `price`, `value` and `day` accordingly."
+- "Here is my broker CSV export in Downloads — update the holdings in index.html to match it (shares, cost, value)."
 - "Add a new holding: 12 shares of ASML bought at €790."
 - "Recalculate the suggestion texts (overweight/underweight vs. `target`) after updating the data."
-- "Search for today's news headlines about each ticker in my portfolio and update the `newsData()` function in Stock Dashboard.html (2–3 headlines per stock, newest first, with date, source and title)."
+- "Search for today's news headlines about each ticker in my portfolio and update the `newsData()` function in index.html (2–3 headlines per stock, newest first, with date, source and title)."
 
 ## Caution
 Keep this folder scoped to just the dashboard — don't point Cowork at folders containing sensitive financial documents you don't want it to read.
